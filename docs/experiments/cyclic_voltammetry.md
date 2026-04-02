@@ -1,4 +1,4 @@
-# 🧪 Cyclic Voltammetry Laboratory Practice (Master Level)
+# 🧪 Cyclic Voltammetry Laboratory Practice 
 
 ## Overview
 
@@ -48,7 +48,9 @@ Students will apply a **triangular potential waveform** and analyze the resultin
 In cyclic voltammetry, the applied potential is swept linearly with time:
 
 \[
-E(t) = E_{start} ightarrow E_{vertex1} ightarrow E_{vertex2}
+E(t) = E_{start} 
+ightarrow E_{vertex1} 
+ightarrow E_{vertex2}
 \]
 
 The current is recorded as a function of potential:
