@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+title: Open Potentiostat Platform
+message: "If you use this project, please cite it using this metadata."
+type: software
+authors:
+  - family-names: Servera
+    given-names: Llorenç
+repository-code: https://github.com/your-org/open-potentiostat-platform
+license: MIT
+version: 0.1.0
+date-released: 2026-04-02
+abstract: >
+  Open electrochemical instrumentation platform for research
+  and master-level teaching.
