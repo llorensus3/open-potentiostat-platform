@@ -163,6 +163,14 @@ images/              → Diagrams and figures
 * [Cyclic Voltammetry](docs/experiments/cyclic_voltammetry.md)
 
 ---
+## 📈 EIS Model Fitting
+
+- `software/analysis/fit_randles_eis.py`
+
+Example:
+
+```bash
+python software/analysis/fit_randles_eis.py data/examples/supercap_eis_example.csv
 
 ## 📡 Communication Protocol
 
