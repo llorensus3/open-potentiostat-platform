@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 title: Open Potentiostat Platform
-message: "If you use this project, please cite it using this metadata."
-type: software
+message: "If you use this project, please cite it as follows:"
+
 authors:
   - family-names: Servera
     given-names: Llorenç
