@@ -1,3 +1,75 @@
+# 🧪 Electrochemical Characterization of Supercapacitors (Gamry 600+)
+
+This repository contains a **complete experimental and analysis workflow** for the characterization of **small supercapacitor cells (mF range)** assembled in **Swagelok cells (Ø 12 mm electrodes)**.
+
+The workflow is designed for **master-level laboratory training** and includes:
+- experimental protocols (Gamry Reference 600+)
+- automated data analysis (Python)
+- example datasets
+- reproducible figures
+
+---
+
+## 🎯 Objectives
+
+- Understand electrochemical characterization techniques:
+  - Cyclic Voltammetry (CV)
+  - Galvanostatic Charge/Discharge (GCD)
+  - Electrochemical Impedance Spectroscopy (EIS)
+
+- Extract key parameters:
+  - Capacitance
+  - Equivalent Series Resistance (ESR)
+  - Frequency response
+
+- Compare experimental methods and identify non-ideal behavior
+
+---
+
+## ⚙️ Experimental Setup
+
+**Cell type:** Swagelok  
+**Electrodes:** circular, Ø 12 mm  
+**Configuration:** two-electrode full cell  
+
+### Connection (Gamry 600+)
+
+| Terminal | Connection |
+|--------|----------|
+| WE + WS | Positive electrode |
+| CE + RE | Negative electrode |
+
+---
+
+## 📊 Measurement Workflow
+
+1. Measure Open Circuit Voltage (OCV)
+2. Perform **EIS** at OCV
+3. Perform **CV** at low scan rate
+4. Repeat CV at higher scan rates
+5. Perform **GCD**
+6. (Optional) Leakage / self-discharge
+
+---
+
+## 📁 Repository Structure
+
+```text
+docs/
+  experiments/
+    gamry_supercapacitor_swagelok.md
+
+software/
+  analysis/
+    analyze_cv_supercap.py
+    analyze_gcd_supercap.py
+    analyze_eis_supercap.py
+
+data/
+  examples/
+    supercap_cv_example.csv
+    supercap_gcd_example.csv
+    supercap_eis_example.csv
 # 🔬 Open Potentiostat Platform
 
 An open-source potentiostat platform for **electrochemical measurements**, combining:
