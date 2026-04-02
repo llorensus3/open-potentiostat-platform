@@ -74,7 +74,9 @@ open-potentiostat-platform/
 ```
 
 ## Quick start
+## System Architecture
 
+![Open Potentiostat Platform Architecture](images/open_potentiostat_architecture.svg)
 ### 1. Hardware
 Build or adapt:
 - analog front-end board
