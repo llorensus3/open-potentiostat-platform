@@ -174,8 +174,16 @@ python example_run.py
 ```
 ## 🧪 Experiments
 
-- [Chronoamperometry Practice](docs/experiments/chronoamperometry.md)
-- [Cyclic Voltammetry Practice](docs/experiments/cyclic_voltammetry.md)
+- [Chronoamperometry](docs/experiments/chronoamperometry.md)
+- [Cyclic Voltammetry](docs/experiments/cyclic_voltammetry.md)
+
+## 📡 Communication Protocol
+
+- [Serial Protocol](protocols/serial_protocol_examples.md)
+
+## 📊 Data Analysis
+
+- `software/raspberry/plot_ca.py`
 
 ## 📡 Communication
 
