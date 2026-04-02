@@ -179,11 +179,16 @@ python example_run.py
 
 ## 📡 Communication Protocol
 
-- [Serial Protocol](protocols/serial_protocol_examples.md)
+- [Serial Protocol Examples](protocols/serial_protocol_examples.md)
 
 ## 📊 Data Analysis
 
-- `software/raspberry/plot_ca.py`
+- [plot_ca.py](software/raspberry/plot_ca.py)
+- [plot_cv.py](software/raspberry/plot_cv.py)
+
+## 📁 Example Data
+
+- `data/examples/cv_example.csv`
 
 ## 📡 Communication
 
