@@ -74,13 +74,15 @@ open-potentiostat-platform/
 ```
 
 ## Quick start
+
 ## System Architecture
+
 <p align="center">
   <img src="images/open_potentiostat_architecture.svg" width="900"/>
 </p>
 
 <p align="center">
-<em>Hybrid architecture separating real-time control (ESP32) and high-level processing (Raspberry Pi).</em>
+  <em>Hybrid architecture separating real-time control (ESP32) and high-level processing (Raspberry Pi).</em>
 </p>
 ### 1. Hardware
 Build or adapt:
