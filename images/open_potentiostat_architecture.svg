@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fbff"/>
+      <stop offset="100%" stop-color="#eef4ff"/>
+    </linearGradient>
+    <linearGradient id="box1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f4f8ff"/>
+    </linearGradient>
+    <linearGradient id="box2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8f5ff"/>
+    </linearGradient>
+    <linearGradient id="box3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f6fffa"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#93a4c3" flood-opacity="0.18"/>
+    </filter>
+    <marker id="arrow" markerWidth="16" markerHeight="16" refX="10" refY="8" orient="auto">
+      <path d="M2,2 L14,8 L2,14 Z" fill="#4a6587"/>
+    </marker>
+    <style>
+      .title { font: 700 34px Arial, sans-serif; fill:#17324d; }
+      .subtitle { font: 400 18px Arial, sans-serif; fill:#47627f; }
+      .boxtitle { font: 700 24px Arial, sans-serif; fill:#17324d; }
+      .boxtext { font: 400 18px Arial, sans-serif; fill:#39536d; }
+      .small { font: 400 15px Arial, sans-serif; fill:#5d738d; }
+      .tag { font: 700 14px Arial, sans-serif; fill:#314b66; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1400" height="820" fill="url(#bg)"/>
+  <text x="70" y="70" class="title">Open Potentiostat Platform</text>
+  <text x="70" y="103" class="subtitle">Hybrid architecture for research and master-level teaching · ESP32 + Raspberry Pi</text>
+
+  <g filter="url(#shadow)">
+    <rect x="90" y="180" rx="26" ry="26" width="320" height="180" fill="url(#box1)" stroke="#bfd1ea" stroke-width="2.2"/>
+  </g>
+  <text x="140" y="230" class="boxtitle">Raspberry Pi Host</text>
+  <text x="140" y="268" class="boxtext">• GUI and experiment setup</text>
+  <text x="140" y="300" class="boxtext">• CSV logging and plotting</text>
+  <text x="140" y="332" class="boxtext">• Calibration and post-processing</text>
+  <rect x="120" y="195" rx="10" ry="10" width="12" height="12" fill="#6aa4ff"/>
+  <text x="90" y="395" class="small">Python · PyQt / plotting · data analysis</text>
+
+  <g filter="url(#shadow)">
+    <rect x="540" y="180" rx="26" ry="26" width="320" height="180" fill="url(#box2)" stroke="#d3c3ef" stroke-width="2.2"/>
+  </g>
+  <text x="640" y="230" class="boxtitle">ESP32 Controller</text>
+  <text x="590" y="268" class="boxtext">• Real-time experiment engine</text>
+  <text x="590" y="300" class="boxtext">• DAC / ADC / relay control</text>
+  <text x="590" y="332" class="boxtext">• Safety checks and streaming</text>
+  <circle cx="570" cy="201" r="7" fill="#b886ff"/>
+  <text x="540" y="395" class="small">USB serial JSON protocol · deterministic timing</text>
+
+  <g filter="url(#shadow)">
+    <rect x="980" y="130" rx="26" ry="26" width="330" height="280" fill="url(#box3)" stroke="#b8e4d0" stroke-width="2.2"/>
+  </g>
+  <text x="1045" y="180" class="boxtitle">Analog Front-End</text>
+  <text x="1030" y="220" class="boxtext">• RE high-impedance buffer</text>
+  <text x="1030" y="252" class="boxtext">• Servo amplifier for CE drive</text>
+  <text x="1030" y="284" class="boxtext">• TIA for WE current measurement</text>
+  <text x="1030" y="316" class="boxtext">• Range switching and protection</text>
+  <text x="980" y="445" class="small">Precision analog stage · low leakage · low noise</text>
+
+  <g>
+    <rect x="1015" y="345" rx="14" ry="14" width="85" height="42" fill="#ffffff" stroke="#c4ddcf"/>
+    <text x="1034" y="372" class="tag">RE BUF</text>
+    <rect x="1110" y="345" rx="14" ry="14" width="85" height="42" fill="#ffffff" stroke="#c4ddcf"/>
+    <text x="1131" y="372" class="tag">SERVO</text>
+    <rect x="1205" y="345" rx="14" ry="14" width="75" height="42" fill="#ffffff" stroke="#c4ddcf"/>
+    <text x="1229" y="372" class="tag">TIA</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="1040" y="535" rx="30" ry="30" width="220" height="170" fill="#ffffff" stroke="#d7dde6" stroke-width="2.2"/>
+  </g>
+  <text x="1077" y="585" class="boxtitle">Electrochemical Cell</text>
+  <text x="1097" y="625" class="boxtext">WE · RE · CE</text>
+  <text x="1078" y="658" class="small">battery · sensor · corrosion · electrolyzer</text>
+
+  <line x1="410" y1="270" x2="540" y2="270" stroke="#4a6587" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="436" y="248" class="small">USB / UART</text>
+
+  <line x1="860" y1="270" x2="980" y2="270" stroke="#4a6587" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="882" y="248" class="small">SPI / GPIO / ADC</text>
+
+  <line x1="1149" y1="410" x2="1149" y2="535" stroke="#4a6587" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="1167" y="478" class="small">WE / RE / CE</text>
+
+  <g filter="url(#shadow)">
+    <rect x="80" y="735" rx="22" ry="22" width="1240" height="52" fill="#ffffff" stroke="#d7e3f3"/>
+  </g>
+  <text x="120" y="768" class="small">Research: validation against Gamry · batteries · electrolyzers · low-cost instrumentation</text>
+  <text x="835" y="768" class="small">Teaching: electrochemistry · embedded systems · instrumentation · data acquisition</text>
+
+  <circle cx="438" cy="270" r="6" fill="#4a6587"/>
+  <circle cx="888" cy="270" r="6" fill="#4a6587"/>
+  <circle cx="1149" cy="437" r="6" fill="#4a6587"/>
+</svg>
