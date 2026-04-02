@@ -172,7 +172,14 @@ cd software/raspberry
 pip install -r requirements.txt
 python example_run.py
 ```
+## 🧪 Experiments
 
+- [Chronoamperometry Practice](docs/experiments/chronoamperometry.md)
+- [Cyclic Voltammetry Practice](docs/experiments/cyclic_voltammetry.md)
+
+## 📡 Communication
+
+- [Serial Protocol Examples](protocols/serial_protocol_examples.md)
 ---
 
 ## Communication Protocol
